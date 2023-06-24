@@ -1,6 +1,5 @@
-import "../app/globals.css";
-import Layout from "../app/layout";
-import Image from "next/image";
+import "../app/globals.css"
+import Layout from "../app/layout"
 
 export default function Introduce() {
   return (
