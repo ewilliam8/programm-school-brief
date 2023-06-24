@@ -1,13 +1,14 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Metadata } from 'next'
 // import { Navbar } from '/widgets/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// export const metadata = {
-//   title: 'Школа Программ',
-//   description: 'Бриф - Школа Программ',
-// }
+export const metadata: Metadata = {
+  title: 'Школа Программ',
+  description: 'Бриф - Школа Программ',
+}
 
 export default function RootLayout({
   children,

@@ -1,5 +1,11 @@
 import "../app/globals.css"
 import Layout from "../app/layout"
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Введение в преподавание',
+  description: 'Введение в преподавание | Школа',
+}
 
 export default function Introduce() {
   return (
