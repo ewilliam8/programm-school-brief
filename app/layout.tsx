@@ -1,14 +1,10 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import { Metadata } from 'next'
+import "./globals.css"
+import { Inter } from "next/font/google"
+import Head from "next/head"
 // import { Navbar } from '/widgets/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: 'Школа Программ',
-  description: 'Бриф - Школа Программ',
-}
 
 export default function RootLayout({
   children,
@@ -16,9 +12,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className={`layout-wrp ${inter.className}`}>
-      {/* <Navbar /> */}
-      {children}
-    </div>
+    <>
+      <Head>
+        <title>Школа Программ</title>
+        <meta name="description" content="Бриф - Школа Программ" />
+      </Head>
+      <div className={`layout-wrp ${inter.className}`}>
+        {/* <Navbar /> */}
+        {children}
+      </div>
+    </>
   )
 }

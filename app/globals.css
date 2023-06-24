@@ -41,3 +41,11 @@ img {
 li {
     margin-top: 15px;
 }
+
+.main-marker {
+    background-color: #E6FFE6;
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: #008000;
+  }
+  
