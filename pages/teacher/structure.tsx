@@ -1,11 +1,18 @@
-import "styles/globals.scss";
-import Layout from "../app/layout";
+import "styles/globals.scss"
+import Layout from "app/layout"
+import Image from 'next/image'
 
 export default function Structure() {
   return (
     <Layout>
       <h1>Структура пробного занятия</h1>
-      <img src="/images/structure/structure.png" alt="О структуре" />
+      <Image
+        src="/images/structure/structure.png"
+        alt="О структуре"
+        layout="responsive"
+        width={807}
+        height={779}
+      />
       <p>
         <span className={"main-marker"}>
           Не нужно читать или учить наизусть.

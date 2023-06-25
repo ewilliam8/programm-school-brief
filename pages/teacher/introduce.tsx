@@ -1,11 +1,18 @@
 import "styles/globals.scss"
-import Layout from "../app/layout"
+import Image from 'next/image'
+import Layout from "app/layout"
 
 export default function Introduce() {
   return (
     <Layout>
       <h1>Введение в преподавание</h1>
-      <img src="/images/introduce/main.png" alt="Ученик и преподаватель" />
+      <Image
+        src="/images/introduce/main.png"
+        alt="Ученик и преподаватель"
+        layout="responsive"
+        width={722}
+        height={516}
+      />
       <p>
         Первым делом стоит сразу сказать, что работа с детьми - это настоящее
         удовольствие. Наши маленькие ученики приходят на занятия с отличным
