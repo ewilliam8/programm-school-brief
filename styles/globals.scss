@@ -42,6 +42,13 @@ td:nth-last-of-type(2) {
   text-align: center;
 }
 
+.page404 {
+  img {
+    width: auto !important;
+    margin: 0 auto;
+  }
+}
+
 @keyframes rotate-hand {
   0% { transform-origin: bottom right; transform: rotate(0deg); }
   25% { transform-origin: bottom right; transform: rotate(-10deg); }

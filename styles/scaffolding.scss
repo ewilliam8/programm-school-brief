@@ -46,10 +46,15 @@ img {
   width: 100%;
   max-width: 500px;
   border-radius: 16px;
+  margin-bottom: 30px;
 }
 
 li {
   margin-top: 15px;
+}
+
+table {
+  margin-bottom: 30px;
 }
 
 th,
@@ -57,4 +62,10 @@ td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+}
+
+@media (max-width: 810px) {
+  li {
+    margin-left: -20px;
+  }
 }
