@@ -1,10 +1,14 @@
 import "styles/globals.scss"
 import Layout from "app/layout"
 import Image from 'next/image'
+import { Button } from "/shared/Button";
+import { useRouter } from 'next/router'
 
 export default function Structure() {
+  const router = useRouter()
   return (
     <Layout>
+      <Button onClickFn={router.back}>Назад</Button>
       <h1>Структура пробного занятия</h1>
       <Image
         src="/images/structure/structure.png"

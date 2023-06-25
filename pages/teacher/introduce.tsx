@@ -1,10 +1,15 @@
-import "styles/globals.scss"
-import Image from 'next/image'
-import Layout from "app/layout"
+import "styles/globals.scss";
+import Image from "next/image";
+import Layout from "app/layout";
+import { Button } from "/shared/Button";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Introduce() {
+  const router = useRouter();
   return (
     <Layout>
+      <Button onClickFn={router.back}>Назад</Button>
       <h1>Введение в преподавание</h1>
       <Image
         src="/images/introduce/main.png"
@@ -32,9 +37,9 @@ export default function Introduce() {
       </p>
       <ul>
         <li>
-          Атмосфера доверия и открытости между
-          преподавателем и учеником. Такое общение является залогом успешного
-          процесса обучения, поэтому мы придаем этому большое значение;
+          Атмосфера доверия и открытости между преподавателем и учеником. Такое
+          общение является залогом успешного процесса обучения, поэтому мы
+          придаем этому большое значение;
         </li>
         <li>
           Один из ключевых аспектов, которые мы обеспечиваем, — это возможность
@@ -44,7 +49,7 @@ export default function Introduce() {
         </li>
         <li>
           Мы стараемся выстраивать взаимодействие между преподавателем и
-          учеником на основе их общих интересов
+          учеником на основе их общих интересов;
         </li>
         <li>
           Комфорт ученика в случае если он не любит конкуренцию (при
@@ -64,6 +69,9 @@ export default function Introduce() {
           предыдущего урока если тот был не до конца понятен) и др.
         </li>
       </ul>
+      <Link href="structure">
+        <Button addClass="ml-auto">Следующий шаг</Button>
+      </Link>
     </Layout>
-  )
+  );
 }

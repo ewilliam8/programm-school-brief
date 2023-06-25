@@ -1,9 +1,5 @@
-// import Image from 'next/image'
+import Layout from "app/layout";
 
 export default function Home() {
-  return (
-    <div>
-      Привет
-    </div>
-  )
+  return <Layout>Привет</Layout>;
 }
