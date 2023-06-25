@@ -11,6 +11,10 @@ body {
   color: var(--black);
 }
 
+span {
+  display: inline-block;
+}
+
 .layout-wrp {
   margin: 24px auto;
   padding: 24px;

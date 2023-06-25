@@ -42,6 +42,22 @@ td:nth-last-of-type(2) {
   text-align: center;
 }
 
+@keyframes rotate-hand {
+  0% { transform-origin: bottom right; transform: rotate(0deg); }
+  25% { transform-origin: bottom right; transform: rotate(-10deg); }
+  50% { transform-origin: bottom right; transform: rotate(10deg); }
+  75% { transform-origin: bottom right; transform: rotate(-10deg); }
+  100% { transform-origin: bottom right; transform: rotate(0deg); }
+}
+
+.anim-rotate-hand {
+  display: inline-block;
+  animation-name: rotate-hand;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
 @media (max-width: 810px) {
   .layout-wrp {
     margin: 0;
