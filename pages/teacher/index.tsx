@@ -28,7 +28,7 @@ export const index = () => {
         Эта статья поможет тебе понять, как успешно провести пробный урок с
         администратором
       </p>
-      <Link href="teacher/introduce">
+      <Link href="teacher/structure">
         <Button>Структура пробного занятия</Button>
       </Link>
     </Layout>
