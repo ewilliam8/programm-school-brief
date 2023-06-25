@@ -1,0 +1,50 @@
+@import "variables";
+@import "scaffolding";
+
+thead {
+  th {
+    border-left: none;
+    border-top: none;
+  }
+}
+
+th:first-child,
+td:first-child,
+th:nth-of-type(2),
+th:nth-of-type(3) {
+  border-left: none;
+  border-top: none;
+}
+
+th:last-child,
+td:last-child,
+td:nth-last-of-type(2) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.table {
+  overflow: hidden;
+  border-radius: 16px;
+  outline: #ddd solid 1px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.main-marker {
+  background-color: var(--primary-light);
+  border-radius: 4px;
+  padding: 2px;
+  color: var(--primary-3);
+}
+
+.ta-center {
+  text-align: center;
+}
+
+@media (max-width: $tablet) {
+  .layout-wrp {
+    margin: 0;
+    box-shadow: none;
+  }
+}

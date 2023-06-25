@@ -1,4 +1,4 @@
-import "./globals.css"
+import "styles/globals.scss"
 import { Inter } from "next/font/google"
 import Head from "next/head"
 // import { Navbar } from '/widgets/Navbar'
