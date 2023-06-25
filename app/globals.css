@@ -1,51 +1,96 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #03001f;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #03001f;
 }
 
 .layout-wrp {
-    margin: 24px auto;
-    padding: 24px;
-    max-width: 760px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
+  margin: 24px auto;
+  padding: 24px;
+  max-width: 760px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 
 h1 {
-    font-style: normal;
-    font-weight: 450;
-    font-size: 36px;
-    line-height: 44px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 36px;
+  line-height: 44px;
 }
 
 h2 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 p {
-    margin-top: 34px;
+  margin-top: 34px;
 }
 
 img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
 }
 
 li {
-    margin-top: 15px;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+    border-left: none;
+    border-top: none;
+}
+
+th:first-child,
+td:first-child,
+th:nth-of-type(2),
+th:nth-of-type(3) {
+    border-left: none;
+    border-top: none;
+}
+
+th:last-child,
+td:last-child,
+td:nth-last-of-type(2) {
+    border-right: none;
+    border-bottom: none;
+}
+
+.table {
+    overflow: hidden;
+    border-radius: 16px;
+    outline: #ddd solid 1px;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .main-marker {
-    background-color: #E6FFE6;
-    border-radius: 4px;
-    padding: 2px 8px;
-    color: #008000;
+  background-color: #e6ffe6;
+  border-radius: 4px;
+  padding: 2px;
+  color: #008000;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+@media (max-width: 810px) {
+  .layout-wrp {
+    margin: 0;
+    box-shadow: none;
   }
-  
+}
