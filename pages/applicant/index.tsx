@@ -2,8 +2,9 @@ import React from "react";
 import Layout from "app/layout";
 import { Button } from "/shared/Button";
 import Link from "next/link";
+import { NextPage } from "next";
 
-export const index = () => {
+export const index: NextPage = () => {
   return (
     <Layout>
       <h1>
@@ -31,6 +32,13 @@ export const index = () => {
       </p>
       <Link href="applicant/structure">
         <Button>Структура пробного занятия</Button>
+      </Link>
+      <h2>Шаг 3. Требования к проведению урока</h2>
+      <p>
+        Эта статья поможет тебе понять, что нужно можно делать на пробном уроке, а что не следует
+      </p>
+      <Link href="applicant/requirements">
+        <Button>Требования к проведению урока</Button>
       </Link>
     </Layout>
   );

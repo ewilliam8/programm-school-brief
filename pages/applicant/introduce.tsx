@@ -4,8 +4,9 @@ import Layout from "app/layout";
 import { Button } from "/shared/Button";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { NextPage } from "next";
 
-export default function Introduce() {
+const Introduce: NextPage =() =>  {
   const router = useRouter();
   return (
     <Layout>
@@ -75,3 +76,5 @@ export default function Introduce() {
     </Layout>
   );
 }
+
+export default Introduce

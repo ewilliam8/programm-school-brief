@@ -1,5 +1,8 @@
 import Layout from "app/layout";
+import { NextPage } from "next";
 
-export default function Home() {
+const Home: NextPage = () => {
   return <Layout>Привет</Layout>;
 }
+
+export default Home

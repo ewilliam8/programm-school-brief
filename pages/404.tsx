@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "app/layout";
 import Image from "next/image";
+import { NextPage } from "next";
 
-export default function notFound() {
+const notFound: NextPage = () => {
   return (
     <Layout>
       <div className="page404">
@@ -17,3 +18,5 @@ export default function notFound() {
     </Layout>
   );
 }
+
+export default notFound

@@ -1,11 +1,12 @@
-import "styles/globals.scss"
-import Layout from "app/layout"
-import Image from 'next/image'
+import "styles/globals.scss";
+import Layout from "app/layout";
+import Image from "next/image";
 import { Button } from "/shared/Button";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
+import { NextPage } from "next";
 
-export default function Structure() {
-  const router = useRouter()
+const Structure: NextPage = () => {
+  const router = useRouter();
   return (
     <Layout>
       <Button onClickFn={router.back}>Назад</Button>
@@ -175,13 +176,15 @@ export default function Structure() {
         самостоятельно и это было круто!
       </p>
       <p>
-        С самого начала в нашей школе мы хотим установить очень важный принцип - полное
-        доверие и открытость! Если что-то не нравится или что-то делается не
-        так, то нужно сразу об этом говорить, чтобы проблема не накапливалась, а
-        была решена на месте. Это является основой для формирования дружного
-        коллектива и достижения больших успехов. Мы верим, что у нас все
-        получится!
+        С самого начала в нашей школе мы хотим установить очень важный принцип -
+        полное доверие и открытость! Если что-то не нравится или что-то делается
+        не так, то нужно сразу об этом говорить, чтобы проблема не
+        накапливалась, а была решена на месте. Это является основой для
+        формирования дружного коллектива и достижения больших успехов. Мы верим,
+        что у нас все получится!
       </p>
     </Layout>
   );
-}
+};
+
+export default Structure;
