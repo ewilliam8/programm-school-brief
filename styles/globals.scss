@@ -49,6 +49,18 @@ td:nth-last-of-type(2) {
   }
 }
 
+.fw700 {
+  font-weight: 700;
+}
+
+.mobile {
+  display: none;
+
+  &-reverse {
+    display: table-cell;
+  }
+}
+
 @keyframes rotate-hand {
   0% { transform-origin: bottom right; transform: rotate(0deg); }
   25% { transform-origin: bottom right; transform: rotate(-10deg); }
@@ -66,8 +78,20 @@ td:nth-last-of-type(2) {
 }
 
 @media (max-width: 810px) {
+  td:first-of-type {
+    border-left: none;
+  }
+
   .layout-wrp {
     margin: 0;
     box-shadow: none;
+  }
+
+  .mobile {
+    display: block;
+
+    &-reverse {
+      display: none;
+    }
   }
 }
