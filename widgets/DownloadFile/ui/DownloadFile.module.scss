@@ -1,0 +1,40 @@
+.FilePreview {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px dashed var(--grey);
+  border-radius: 8px;
+  transition: 0.2s;
+
+  &:hover {
+    border: 1px dashed var(--primary);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.img-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.annotation {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    line-height: 20px;
+  }
+
+  &-desc {
+    font-size: 14px;
+    color: var(--grey);
+    line-height: 20px;
+  }
+}

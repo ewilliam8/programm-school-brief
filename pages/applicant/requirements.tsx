@@ -1,9 +1,10 @@
+import Image from "next/image";
+import { useRouter } from "next/router";
+
 import { NextPage } from "next";
-import React from "react";
 import Layout from "/app/layout";
 import { Button } from "/shared/Button";
-import { useRouter } from "next/router";
-import Image from "next/image";
+import { DownloadFile } from "widgets/DownloadFile";
 
 const Requirements: NextPage = () => {
   const router = useRouter();
@@ -123,6 +124,13 @@ const Requirements: NextPage = () => {
           например, сам установил Py Charm, то работаем на нем.
         </li>
       </ul>
+      <h2>Файлы</h2>
+      <p>Данные файлы помогут улучшить качество уроков:</p>
+      <DownloadFile
+        title="Фон для Zoom (обязательно)"
+        desc="68kb"
+        fileUrl="/images/requirements/Background-for-Zoom.png"
+      />
     </Layout>
   );
 };
