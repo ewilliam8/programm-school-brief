@@ -18,6 +18,7 @@ const Introduce: NextPage =() =>  {
         layout="responsive"
         width={722}
         height={516}
+        className="rounded"
       />
       <p>
         Первым делом стоит сразу сказать, что работа с детьми - это настоящее

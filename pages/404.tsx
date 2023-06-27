@@ -13,6 +13,7 @@ const notFound: NextPage = () => {
           layout="responsive"
           width={1080}
           height={1080}
+          className="rounded"
         />
       </div>
     </Layout>
