@@ -40,6 +40,7 @@ const Structure: NextPage = () => {
         layout="responsive"
         width={807}
         height={779}
+        className="rounded"
       />
       <p>
         <span className={"main-marker"}>
@@ -88,6 +89,8 @@ const Structure: NextPage = () => {
                 <span className={"main-marker"}>
                   Обязательно включите запись экрана.
                 </span>
+                <br /><br />
+                
               </>
             }
             time="4 минуты"
