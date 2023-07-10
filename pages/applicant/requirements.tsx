@@ -118,7 +118,7 @@ const Requirements: NextPage = () => {
       />
       <DownloadFile
         title="Аватар для Zoom (обязательно)"
-        desc="48kb"
+        desc="34kb"
         fileUrl="/images/requirements/Avatar-for-Zoom.jpg"
       />
     </Layout>
