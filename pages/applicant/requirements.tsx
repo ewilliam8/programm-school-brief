@@ -116,6 +116,11 @@ const Requirements: NextPage = () => {
         desc="68kb"
         fileUrl="/images/requirements/Background-for-Zoom.png"
       />
+      <DownloadFile
+        title="Аватар для Zoom (обязательно)"
+        desc="48kb"
+        fileUrl="/images/requirements/Avatar-for-Zoom.png"
+      />
     </Layout>
   );
 };
